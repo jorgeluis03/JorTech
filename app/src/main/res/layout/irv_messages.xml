@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/leftChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:id="@+id/textLeftMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Hola, cómo estas?"
+            android:background="@drawable/background_left_chat"
+            android:padding="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background_circle"
+            android:src="@drawable/icon_chatbot" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="">
+
+        <TextView
+            android:id="@+id/textRightMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola, Muy bien"
+            android:background="@drawable/background_left_chat"
+            android:backgroundTint="#D6EAF8"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="-16dp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background_circle"
+            android:src="@drawable/icon_perfil"
+            android:layout_toRightOf="@+id/textRightMessage" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

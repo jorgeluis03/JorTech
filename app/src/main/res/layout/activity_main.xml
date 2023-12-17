@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <RelativeLayout
         android:id="@+id/toolbar"
@@ -52,7 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/relativeLBottom"/>
+        android:layout_above="@+id/relativeLBottom"
+        app:stackFromEnd="true"/> <!--para que se muestre primero el ultimo-->
 
 
 
@@ -70,6 +71,7 @@
 
 
         <EditText
+            android:id="@+id/editTextInputMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Escribe"
