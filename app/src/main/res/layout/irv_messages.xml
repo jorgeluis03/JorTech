@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_alignParentEnd="true"
-        android:visibility="">
+        >
 
         <TextView
             android:id="@+id/textRightMessage"
